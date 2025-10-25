@@ -174,10 +174,4 @@ plt.axis('off')
 plt.tight_layout()
 plt.show()
 
-print("="*60)
 print(f"Number of 'O' letters detected: {len(o_locations)}")
-print(f"Letters with holes filtered out: {len(other_holes)} (p, g, d, etc.)")
-print("="*60)
-print("\nDetected 'O' locations (x, y, width, height):")
-for i, (x, y, w, h) in enumerate(o_locations, 1):
-    print(f"  O #{i}: ({x}, {y}, {w}, {h})")
